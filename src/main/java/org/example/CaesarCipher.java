@@ -24,7 +24,7 @@ public class CaesarCipher {
         return processText(text, 26 - key);
     }
     public String processText(String text, int key) {
-        //StringBuilder encryptedResult = new StringBuilder();
+        StringBuilder encryptedResult = new StringBuilder();
 
         for (char character : text.toCharArray()){
             // Shift only if it is a letter
