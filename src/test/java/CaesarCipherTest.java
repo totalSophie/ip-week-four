@@ -19,6 +19,8 @@ public class CaesarCipherTest {
         assertEquals("KL", cipher.encrypt("HI"));
         assertEquals("HI", cipher.decrypt("KL"));
 
+        assertEquals("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD", cipher.decrypt("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG"));
+        assertEquals("THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG", cipher.encrypt("QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD"));
 
         cipher.setKey(5);
 
