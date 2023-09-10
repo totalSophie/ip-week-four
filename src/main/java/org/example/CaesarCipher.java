@@ -28,7 +28,6 @@ public class CaesarCipher {
 
         for (char character : text.toCharArray()){
             // Shift only if it is a letter
-            // Check to see if letter and modify accordingly
             if (Character.isLetter(character)){
                 char baseLetter = Character.isLowerCase(character)? 'a' : 'A';
                 char shiftedLetter = (char) (((character - baseLetter + key) % 26) + baseLetter);
