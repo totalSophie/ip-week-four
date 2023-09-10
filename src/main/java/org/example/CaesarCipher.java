@@ -21,7 +21,7 @@ public class CaesarCipher {
     }
 
     public String decrypt(String text) {
-        return processText(text, -key);
+        return processText(text, 26 - key);
     }
     public String processText(String text, int key) {
         StringBuilder encryptedResult = new StringBuilder();
