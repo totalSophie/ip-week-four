@@ -29,7 +29,7 @@ public class CaesarCipher {
         for (char character : text.toCharArray()){
             // Shift only if it is a letter
             if (Character.isLetter(character)){
-                char baseLetter = Character.isLowerCase(character)? 'b' : 'B';
+                char baseLetter = Character.isLowerCase(character)? 'b' : 'A';
                 char shiftedLetter = (char) (((character - baseLetter + key) % 26) + baseLetter);
                 encryptedResult.append(shiftedLetter);
             }
