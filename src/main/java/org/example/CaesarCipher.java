@@ -11,10 +11,10 @@ public class CaesarCipher {
     public int getKey() {
         return key;
     }
-
+    /*
     public void setKey(int key) {
         this.key = key;
-    }
+    } */
 
     public String encrypt(String text) {
         return processText(text, key);
