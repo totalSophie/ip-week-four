@@ -30,7 +30,7 @@ public class CaesarCipher {
             // Shift only if it is a letter
             if (Character.isLetter(character)){
                 char baseLetter = Character.isLowerCase(character)? 'a' : 'A';
-                char shiftedLetter = (char) (((character - baseLetter + key) % 26 + 26) + baseLetter);
+                char shiftedLetter = (char) (((character - baseLetter + key) % 26) + baseLetter);
                 encryptedResult.append(shiftedLetter);
             }
             else {
