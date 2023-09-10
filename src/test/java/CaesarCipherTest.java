@@ -7,7 +7,7 @@ public class CaesarCipherTest {
     @Test
     public void testCipher() {
         CaesarCipher cipher = new CaesarCipher(2);
-        assertEquals("HII", cipher.decrypt("JKK"));
+        assertEquals("HI", cipher.decrypt("JK"));
         assertEquals("JGNNQ", cipher.encrypt("HELLO"));
         assertEquals("Hello, World!", cipher.decrypt("Jgnnq, Yqtnf!"));
     }
